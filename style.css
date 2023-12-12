@@ -2,21 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ddd8d8;
 }
 
 #app {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
+    display: flex;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-#content {
-    margin-top: 20px;
-}
+
 
 #gifDisplay {
     max-width: 100%;
