@@ -8,11 +8,13 @@ const nextButton = document.getElementById('nextButton');
 
 // the Gifs
 const gifs = [
-    "https://www.motionelements.com/stock-image-28156558-hygiene-of-cat-care-pet-care-cat-shedding-a-pile-of-cat-fur-cat-grooming?query_id=dcc6d8a6-17d0-45dc-9806-c43f207ffdfc&position=1",
-    "https://www.motionelements.com/stock-image-26235407-cat-in-sunglasses-in-neon-light-cat-in-glasses-cat-at-the-disco-british-cat?query_id=dcc6d8a6-17d0-45dc-9806-c43f207ffdfc&position=2",
-    "https://www.motionelements.com/stock-image-23604988-tabby-cat-on-a-rattan-chair-stroking-a-cat-close-up-the-cat-yawns?query_id=dcc6d8a6-17d0-45dc-9806-c43f207ffdfc&position=6",
-        ];
-//use this format picDiv.innerHTML = `<img src="${url}" alt="${title}">`;
+    "gifs/gif1.gif",
+    "gifs/gif2.gif",
+    "gifs/gif3.gif",
+    "gifs/gif4.gif",
+    "gifs/gif5.gif",
+];
+
 
 let currentGifIndex = 0;
 
