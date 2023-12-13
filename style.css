@@ -11,13 +11,22 @@ body {
     padding: 20px;
     display: flex;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
     text-align: center;
 }
 
-
+input {
+    width: 50%;
+    padding: 0.5px;
+    margin-bottom: 3px;
+  }
 
 #gifDisplay {
     max-width: 100%;
     height: auto;
+}
+
+#emailForm {
+    margin-left: 40%;
+    position: absolute;
 }
