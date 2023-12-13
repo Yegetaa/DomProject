@@ -1,3 +1,5 @@
+// Wait for the DOM to be fully loaded before manipulating it
+
 document.addEventListener('DOMContentLoaded', function () {
     // Elements
     const contentDiv = document.getElementById('content');
@@ -49,5 +51,33 @@ document.addEventListener('DOMContentLoaded', function () {
     buttonDiv.appendChild(nextButton);
   
     updateGif();
-  });
-  
+    
+    const usernameInput = document.getElementById('username');
+    
+    usernameInput.addEventListener('input', function () {
+      validateUsername();
+    });
+    
+    function validateUsername() {
+      const usernameValue = usernameInput.value();
+      const spaceIndex = usernameValue.indexOf(' ');
+      if (spaceIndex === -1 || spaceIndex === 0 || spaceIndex === usernameValue.length - 1) {
+        // No space or space at the beginning/end
+        alert('Please enter both first name and last name.');
+      }
+    }
+    
+    
+    // Select the button using querySelector
+    const submitButton = document.querySelector('#emailForm button');
+    
+    // Apply styles to the button
+    submitButton.style.marginLeft= '40px';
+    submitButton.style.padding = '3px'; // Padding
+    // Add more styles as needed
+    
+    emailForm.addEventListener('submit', function (e) {
+      e.preventDefault();})
+      
+    });
+      
