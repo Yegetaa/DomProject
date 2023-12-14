@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
         currentGifIndex--;
         updateGif();
         prevButton.style.backgroundColor = 'lightgray';
+
+       
       }
     });
   
@@ -49,6 +51,10 @@ document.addEventListener('DOMContentLoaded', function () {
         currentGifIndex++;
         updateGif();
         nextButton.style.backgroundColor = 'gray';
+
+      const emailInput = document.getElementById('email');
+      emailInput.placeholder = 'ENTER EMAIL HERE';
+      usernameInput.placeholder = 'ENTER FULL NAME';
       }
     });
     
