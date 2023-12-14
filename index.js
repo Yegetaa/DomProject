@@ -7,11 +7,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const buttonDiv = document.getElementById('buttons');
   
     // Create Previous and Next buttons
+    const buttonFragment = document.createDocumentFragment();
     const prevButton = document.createElement('button');
     prevButton.textContent = 'Previous';
-  
+    buttonFragment.appendChild(prevButton);
+
     const nextButton = document.createElement('button');
     nextButton.textContent = 'Next';
+    buttonFragment.appendChild(nextButton);
+
+    buttonDiv.appendChild(buttonFragment);
+    const emailForm = buttonDiv.nextElementSibling;
   
     // The Gifs
     const gifs = [
@@ -45,11 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         nextButton.style.backgroundColor = 'gray';
       }
     });
-  
-    // Append buttons to buttonDiv
-    buttonDiv.appendChild(prevButton);
-    buttonDiv.appendChild(nextButton);
-  
+    
     updateGif();
     
     const usernameInput = document.getElementById('username');
@@ -69,9 +71,9 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     // Select the button using querySelector
-    const submitButton = document.querySelector('#emailForm button');
+    const submitButton = emailForm.querySelector('button');
     
-    // Apply styles to the button
+    // Apply styles to the button with BOM
     submitButton.style.marginLeft= '40px';
     submitButton.style.padding = '3px'; // Padding
     // Add more styles as needed
